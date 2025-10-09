@@ -1,13 +1,14 @@
 
-nav {
+nav, footer {
   background-color: steelblue;
   padding: 10px;
+  color: white;
 }
 
 a {
   color: white;
   margin: 40px;
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h1 {
@@ -36,23 +37,26 @@ p {
   margin: 0 auto;
 }
 
-footer {
-  background-color: steelblue;
-  color: white;
-  text-align: center;
-  
+footer p {
+  font-size: 20px;
+  margin: 20px auto;
 }
 
 .main-para {
-    font-size: 1.5em;
-    line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 #active {
-    background-color: white;
-    color: steelblue;
+  background-color: white;
+  color: steelblue;
 }
 
 * {
-    border: 2px solid blue;
+  border: 2px solid blue;
+}
+
+a:hover {
+  background-color: white;
+  color: steelblue;
 }
