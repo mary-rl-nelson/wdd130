@@ -1,0 +1,102 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a, #hero-msg h1, #hero-msg h4, .button-box, main section{
+    text-align: center;
+}
+
+.home-grid h2{
+    color:white
+}
+
+#background {
+    height: 725px;
+    background-color:#095f78;
+}
+
+body {
+    background-color: #002536;
+}
+
+header {
+    background-color:#095f78;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #002536;
+    color: #f7a120;
+}
+
+.book, .join {
+    color:#f7a120;
+    background-color: #095f78;
+    text-decoration: none;
+}
+.book:hover, .join:hover{
+    background-color: #f7a120;
+    color: #002536;
+}
+
+.msg {
+    background-color: #095f78;
+}
+
+footer {
+    background-color: #095f78;
+    color: white;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#f7a120
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+.home-title {
+    color: #f7a120;
+}
+
+h4 {
+    color:white;
+}
+
+.msg h2 {
+    color:#f7a120;
+}
+
+.msg p {
+    color:white;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.mountains {
+    width: 50%
+}
