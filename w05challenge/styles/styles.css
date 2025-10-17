@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    background-color: grey;
+}
+
+img {
+    border-radius: 50%;
+    border: 5px solid rgb(79, 79, 79);
+    margin: 20px;
+    width: 20%;
+    display: inline-block;
+}
+
+.row{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.normal {
+    width: 100%;
+    border: none;
+    margin: auto;
+    border-radius:0%;
+}
+
