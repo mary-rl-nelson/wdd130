@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Patua+One&display=swap');
+
+
+body {
+    background: black;
+    border: 2px red solid;
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+
+
+
+    
+.content {
+    display: inline-grid;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    max-width: max-content;
+    border-radius: 20px;
+
+}
+
+.content * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.content img {
+    width: auto; /* Keep original size */
+    height: auto;
+    display: block;
+}
+
+
+.contentinside { 
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#information {
+    margin: 1.2em;
+    font-size: 1.2em;
+    color: grey;
+}
+
+h4 {
+    color: rgb(91, 110, 156);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+footer {
+    width: 100%;                 
+    background-color: rgb(91, 110, 156);
+    color: white;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+.numbers {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: inline-flex;
+    justify-content: space-around;
+    align-self: center;
+    
+    
+}
+
+.undertext {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: inline-flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+
+footer .numbers, footer .undertext {
+    display: contents; /* Allows children to align in grid */
+}
+
+
+footer p {
+    margin: 0;
+}
+
+#information {
+    margin: 1.2em;
+    font-size: 1.2em;
+    color: grey;
+    white-space: normal;      /* allow wrapping */
+    overflow-wrap: break-word;/* force long chunks to break inside container */
+    word-break: break-word;   /* older browser support */
+}
