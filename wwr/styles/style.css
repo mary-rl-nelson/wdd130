@@ -1,32 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Trade+Winds&display=swap');
 
+body {
+    background-color: #002536;
+    font-family: "Avant Garde", Tajawal, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-nav a, #hero-msg h1, #hero-msg h4, .button-box, main section{
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
     text-align: center;
 }
 
-.home-grid h2{
-    color:white
+.home-grid h2 {
+    color: white;
 }
 
+h2 {
+    margin: 0;
+}
+
+h4 {
+    color: white;
+}
+
+/* BACKGROUND */
 #background {
     height: 725px;
-    background-color:#095f78;
+    background-color: #095f78;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
-
-
+/* HEADER */
 header {
-    background-color:#095f78;
+    background-color: #095f78;
     display: grid;
     grid-template-columns: 150px auto;
 }
 
-nav a{
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -38,68 +67,37 @@ nav a:hover {
     color: #f7a120;
 }
 
-.book, .join {
-    color:#f7a120;
+/* BUTTON */
+.book,
+.join {
+    color: #f7a120;
     background-color: #095f78;
     text-decoration: none;
-    font-family: "Avant Garde", Tajawal, sans-serif;
     font-weight: 600;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    font-family: "Avant Garde", Tajawal, sans-serif;
 }
-.book:hover, .join:hover{
+
+.book:hover, .join:hover {
     background-color: #f7a120;
     color: #002536;
 }
 
+/* MESSAGE BOX */
 .msg {
     background-color: #002536;
-}
-
-footer {
-    background-color:  #095f78;
-    color: white;
-    line-height: .7em;
-    padding: 25px 50px;
-    margin-top: 200px;
-}
-
-footer p{
-    font-size: 1.2em;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover{
-    color:#f7a120
-}
-
-footer p a:hover{
-    text-decoration: underline;
-}
-
-.home-title {
-    color: #f7a120;
-    font-family: "Trade Winds", Georgia, 'Times New Roman', Times, serif;
-    font-size: 2em;
-    margin-top: 10px;
-}
-
-h4 {
-    color:white;
-}
-
-h2 {
-    margin: 0;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg h2 {
-    color:#f7a120;
+    color: #f7a120;
     font-family: "Trade Winds", Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
 }
@@ -110,11 +108,47 @@ h2 {
     padding-bottom: 15px;
 }
 
-.msg {
-    line-height: 1.5em;
-    padding: 35px;
+/* FOOTER */
+footer {
+    background-color: #095f78;
+    color: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
 }
 
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f7a120;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+/* TITLES */
+.home-title {
+    color: #f7a120;
+    font-family: "Trade Winds", Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* IMAGES */
 .logo {
     width: 80px;
     border-radius: 15%;
@@ -135,16 +169,8 @@ h2 {
     width: 100%;
 }
 
-.mountains {
-    width: 50%
-}
-
-footer .social img {
-    padding-top: 15px;
-}
-
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
+.card-img, .mountains {
+    width: 100%;
 }
 
 .card-img {
@@ -158,19 +184,11 @@ footer .social img {
     transform: scale(1.1);
 }
 
-main section img {
-    box-sizing: border-box;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-}
-
+/* HERO SECTION */
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px; 
+    margin-top: -100px;
 }
 
 #hero-box {
@@ -179,23 +197,23 @@ nav {
     z-index: -1;
 }
 
-#hero-img {
-    width: 100%;
-}
-
 #hero-msg {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
 }
 
-main {
+/* GRID */
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-.card-img, .mountains {
-    width:100%
+/* CARDS */
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
 }
 
 .rivers-card {
@@ -213,44 +231,84 @@ main {
     grid-row: 2/3;
 }
 
-#background {
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
-
 .mountains {
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-.msg {
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
+/* FAQ */
+#faqcontent {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;
+    align-items: stretch;
+    padding: 20px;
 }
 
-body {
-    background-color: #002536;
-    font-family: "Avant Garde", Tajawal, sans-serif;
-    font-size: 22px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-footer {
+.imagefaq {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+}
+
+.imagefaq img {
+    width: 100%;
+    height: 100%; /* fill height of container */
+    object-fit: cover; /* keep proportions and crop if needed */
+    border-radius: 10px;
+    display: block;
+    
 }
 
 
+#faqtitle {
+    width: 100%;
+    color:#fafffd;
+    font-family: "Trade Winds", Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-align:center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 10;
 
+}
 
+.faq-grid {
+    grid-column: 2 / 3;
+}
 
+details {
+    margin-bottom: 15px;
+    background-color: #095f78;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+summary {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #002536;
+    background-color: #fafffd;
+}
 
+summary:hover {
+    text-decoration: underline;
+    color:#f7a120
+}
+
+details p {
+    padding: 15px 20px;
+    color: white;
+    margin: 0;
+}
+
+.faqfoot {
+    margin-top: 0;
+}
 
 
 
