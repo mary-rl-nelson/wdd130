@@ -21,68 +21,95 @@
             </a>
         </header>
         <main>
-            <img id="contact-img"src="images/lime.jpg" alt="lime background">
-            <form action="/my-handling-form-page" method="post"
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" />
-                </p>
-                <p>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email"/>
-                </p>
-                <p>
-                    <label for="phone">Number: </label>
-                    <input type="tel" id="phone" name="phone"
-                        placeholder="(000)-000-0000" />
-                </p>
-                <p>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="usermessage"></textarea>
-                </p>
-                <p class="button">
-                    <button type="submit">Send your message</button>
-                </p>
-            </form>
+            <div id="contact-hero">
+                <div id="contact-hero-box">
+                    <img id="contact-img"src="images/lime.jpg" alt="lime background">
+                </div>
+                
+                <section id="contact-hero-msg">
+                    <h1>Contact Us</h1>
+                    <form action="/my-handling-form-page" method="post">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </p>
+                        <p>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email"/>
+                        </p>
+                        <p>
+                            <label for="phone">Number: </label>
+                            <input type="tel" id="phone" name="phone"
+                                placeholder="(000)-000-0000" />
+                        </p>
+                        <p>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="usermessage"></textarea>
+                        </p>
+                        <p class="button">
+                            <button type="submit">Send your message</button>
+                        </p>
+                    </form>
+                </section>
+            </div>    
             <section class="reviews">
-                <div>
+                <div id="review1">
                     <p>Service was fantastic!! So friendly and absolutely delicious!</p>
-                    <img src="images/placeholder-50x50.png" alt="Contact Picture">
-                    <h5>Elise Forest</h5>
+
+                    <div class="inlinename">
+                        <img src="images/placeholder-50x50.png" alt="Contact Picture">
+                        <h5>Elise Forest</h5>
+                    </div>
                 </div>
-                <div>
-                    <p>I bought a pearl necklace for my wife, she absolutely loves it. It is so pretty and delicate and made for a great gift for her!</p>
-                    <img src="images/placeholder-50x50.png" alt="Contact Picture">
-                    <h5>Charles J Kennedy</h5>
+
+                <div id="review2">
+                    <p>
+                        I bought a pearl necklace for my wife, she absolutely loves it.
+                        It is so pretty and delicate and made for a great gift for her!
+                    </p>
+
+                    <div class="inlinename">
+                        <img src="images/placeholder-50x50.png" alt="Contact Picture">
+                        <h5>Charles J Kennedy</h5>
+                    </div>
                 </div>
-                <div>
-                    <p>Booked her for our wedding, she made beautiful drinks that were elevated that everyone could enjoy. Definitely would recommend Olive & Lime for your next event!</p>
-                    <img src="images/placeholder-50x50.png" alt="Contact Picture">
-                    <h5>Abigail Adams</h5>
+
+                <div id="review3">
+                    <p>
+                        Booked her for our wedding, she made beautiful drinks that were
+                        elevated and that everyone could enjoy. Definitely would recommend
+                        Olive & Lime for your next event!
+                    </p>
+
+                    <div class="inlinename">
+                        <img src="images/placeholder-50x50.png" alt="Contact Picture">
+                        <h5>Abigail Adams</h5>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-logo">
-                <a href="index.html">
-                    <img src="images/logo-resized.png" alt="Olive & Lime logo">
-                </a>
-            </div
-            <div class="footer-links">
-                <a href="events.html">Events</a>
-                <a href="plants&pearls.html">Plants & Pearls</a>
-                <a href="contactus.html">Contact Us</a>
-                <a href="site-plan.html">Site Plan</a>
-            </div
-            <div class="social">
-                <a href="#"><img src="images/facebook.png"></a>
-                <a href="#"><img src="images/twitter.png"></a>
-                <a href="#"><img src="images/instagram.png"></a>
-            </div
-            <p class="copyright">
-                Olive & Lime © 2025 - Mary Nelson
-            </p>
-        </footer>
-    </div>    
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="images/logo-resized.png" alt="Olive & Lime logo">
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="events.html">Events</a>
+            <a href="plants&pearls.html">Plants & Pearls</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="site-plan.html">Site Plan</a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="images/facebook.png"></a>
+            <a href="#"><img src="images/twitter.png"></a>
+            <a href="#"><img src="images/instagram.png"></a>
+        </div>
+        <p class="copyright">
+            Olive & Lime © 2025 - Mary Nelson
+        </p>
+    </footer>
+       
 </body>
 </html>
