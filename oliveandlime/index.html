@@ -32,7 +32,10 @@
                             <a class ="book" href="contactus.html">Book Now</a>
                         </div>
                     </section>
-                </div>    
+                </div>
+                <div>  
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                </div>
                 <main class="home-grid">
                         <section class="about">
                             <h2>Plants, Pearls, & Pleasantries</h2>
@@ -84,7 +87,26 @@
                     Olive & Lime © 2025 - Mary Nelson
                 </p>
             </footer>
-   
+            <script>
+                const mybutton = document.getElementById("myBtn");
+
+                window.onscroll = function() {
+                    scrollFunction();
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
         </body>
     </div>
 </html>

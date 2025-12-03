@@ -29,6 +29,7 @@
                 <h4>Find the perfect gift, whether for yourself or someone else, there is something for everyone. Handcrafted beautiful pearl jewelry and fresh plants to brighten your day</h4>
             </section>
         </div>
+        <div><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></div>
         <main>
             <h2>Products:</h2>
             <div class="pearls">
@@ -112,5 +113,23 @@
             Olive & Lime © 2025 - Mary Nelson
         </p>
     </footer>
+    <script>
+        const mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {
+                scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {mybutton.style.display = "none";}
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
