@@ -7,7 +7,6 @@ body {
     color:#f5f0f0;
     font-family: Raleway, Helvetica, sans-serif;
     border:#f5f0f0 5px solid;
-   
 }
 
 #content {
@@ -35,7 +34,6 @@ nav a{
     font-family: Raleway, Helvetica, sans-serif;
     padding: 35px;
     font-size: 1.2em;
-
 }
 nav a:hover{
     color: #f5f0f0;
@@ -93,6 +91,7 @@ nav{
     margin-bottom: 10px;
 }
 
+
 .button-box a {
     color:#988c6f;
     text-decoration: none;
@@ -124,7 +123,8 @@ nav{
     background: rgba(255, 255, 255, 0.85);
 }
 
-.about p, h4{
+.about p, 
+.about h4 {
     font-size: .8em;
     text-align:center;
 }
@@ -141,23 +141,21 @@ nav{
 .cards {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
-    grid-template-rows: repeat(4 1fr);
+    /* IMPORTANT: no grid-template-rows here so behavior matches original */
     width: 100%;
 }
 
 .cardimage1, .cardimage2, .cardimage3 {
     box-shadow: 5px 5px 10px #6f7364;
     width: 100%;
-    border: 5px solid
+    border: 5px solid #f5f0f0;
 }
-
 
 .events,
 .pearls,
 .plants {
     margin-top: 50px;
-    position: relative
-    
+    position: relative;
 }
 
 .events {
@@ -174,8 +172,8 @@ nav{
     grid-column: 6/7;
     grid-row: 1/3;
 }
-.middle 
-{
+
+.middle {
     position: absolute;
     top: 0;
     left: 0;
@@ -214,7 +212,6 @@ footer {
     column-gap: 25px;
 }
 
-
 .footer-logo {
     grid-row: 1 / 3;  
     display: flex;
@@ -227,7 +224,6 @@ footer {
     object-fit: contain;
     display: block;
 }
-
 
 .footer-links {
     grid-column: 2/3;
@@ -247,7 +243,6 @@ footer {
     text-decoration: underline;
     font-style: italic;
 }
-
 
 .social {
     grid-column: 3/4;
@@ -274,9 +269,6 @@ footer .copyright {
 
 
 
-
-
-
 /*Contact Us Webpage*/
 
 /*Contact Hero*/
@@ -285,7 +277,6 @@ footer .copyright {
     height: auto;
     border-bottom: #f5f0f0 5px solid;
 }
-
 
 #contact-hero {
     position: relative;
@@ -315,17 +306,16 @@ footer .copyright {
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 10px;
     margin-bottom: 100px;
     text-align: center;
 }
+
+/* Contact form*/
 
 form {
   display: inline-block;
   margin-top: -30px;
 }
-
-
 
 label {
   display: inline-block;
@@ -352,19 +342,45 @@ textarea {
   height: 5%;
 }
 
-
-
-button {
-  margin-left: 1 em;
-  background-color: #988c6f;
-  color:#f5f0f0;
-  padding: 5px;
-  border-radius: 10%;
+.events-main .button-box a,
+.prod .cart {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 999px;
+    background-color: #f5f0f0;
+    color: #493843;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
 
-button:hover {
-    color:#f5f0f0;
+form button{
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 999px;
+    background-color: #988c6f;
+    color: #f5f0f0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.events-main .button-box a{
+    color: #988c6f;
+}
+
+form button:hover{
     background-color: #493843;
+}
+
+.events-main .button-box a:hover,
+.prod .cart:hover{
+    background-color: #988c6f;
+    color: #f5f0f0;
 }
 
 /*Reviews*/
@@ -399,9 +415,7 @@ button:hover {
     margin-right: 5%;
     margin-left: 5%;
     border-radius: 10px;
-    border:#f5f0f0 4px solid
-
-    
+    border:#f5f0f0 4px solid;
 }
 
 .inlinename {
@@ -430,7 +444,6 @@ button:hover {
     grid-column: 3/4;
 }
 
-
 #feedback {
     background-color: #B48291;
     position: absolute;
@@ -438,10 +451,10 @@ button:hover {
     left: 0;
     right: 0;
     padding: .5em;
-    /* make this element invisible until we are ready for it */
     display: none;      
     text-align: center;
 }
+
 .moveDown {
     margin-top: 3em;
 }
@@ -458,14 +471,12 @@ button:hover {
     border-bottom: 5px #f5f0f0 solid;
 }
 
-
 #eventhero img {
     width: 100%;
     height:100%;       
     object-fit: cover; 
     display: block;
 }
-
 
 #hero-img1 {
     grid-column: 1 / 2;
@@ -490,15 +501,23 @@ button:hover {
     background: rgba(255, 255, 255, 0.85);
     color: #988c6f;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     max-width: 80%;
     z-index: 2;
 }
 
+#event-hero-msg h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#event-hero-msg p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* event main*/
-
-
 
 .events-main {
     display: flex;
@@ -511,63 +530,251 @@ button:hover {
 .market_fairs {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;   
     align-items: center;
     gap: 20px;
     overflow: hidden;
+    border: #f5f0f0 5px solid;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
 }
 
-/* Images */
+.private_events {
+    margin-bottom: 0px;
+}
+
 .private_events img,
 .market_fairs img {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    display: block;
-    border-radius: 8px;
+    border: #f5f0f0 5px solid;
+    grid-row: 1 / 3;          
 }
 
-
-.private_events h2,
-.private_events p {
-    grid-column: 2 / 3;  
-    padding-left: 10%;
-    padding-right:10%;
-
+.private_events img {
+    grid-column: 1 / 2;
 }
 
-
-.market_fairs h2,
-.market_fairs p {
-    grid-column: 1 / 2;  
-    grid-row: 1/2 ;
+.private_text {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;          
     padding-left: 10%;
-    padding-right:10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.private_events .button-box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;          
+    display: flex;
+    gap: 12px;
+    padding-left: 10%;
 }
 
 .market_fairs img {
-    grid-column: 2/3;
-    grid-row: 1/2;
-
+    grid-column: 2 / 3;
 }
 
+.market_text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.market_fairs .button-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 12px;
+    padding-left: 10%;
+}
+
+.events .button-box {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;  
+    margin: 0;
+}
+
+/* PLANTS & PEARLS */
+
+#product-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    margin: 0;
+    margin-bottom: -20px;
+}
+
+#product-hero-box {
+    grid-column: 1 / 8;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+
+#product-hero-msg {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.70);
+    color: #493843;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.products {
+    margin: 0;
+    padding: 0;
+    background-color: #493843;
+    border-bottom: #f5f0f0 5px solid;
+}
+
+.products h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #988c6f;
+    color: #f5f0f0;
+    border-bottom: #f5f0f0 5px solid;
+    border-top: #f5f0f0 5px solid;
+}
+
+.prod {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.prod img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#prod1,
+#prod2,
+#prod3,
+#prod4,
+#prod5,
+#prod6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    border: #f5f0f0 3px solid;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 380px;
+}
+
+.prod h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #f5f0f0;
+}
+
+.prod p {
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+    color: #f5f0f0;
+}
+
+.prod h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f5f0f0;
+}
+
+.prod .button-box {
+    margin-top: auto;     
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+/*go to top button*/
+
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #B48291; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 15px; /* Increase font size */
+  display: none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #B48291; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 15px; 
   font-weight: bold;
   font-family: Raleway, Helvetica, sans-serif;
 }
 
 #myBtn:hover {
-  background-color: #493843; /* Add a dark-grey background on hover */
+  background-color: #493843; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+#caption {
+    margin: 10px auto;
+    text-align: center;
+    color: #f5f0f0;
+    font-size: 1.1em;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f5f0f0;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: #988c6f;
 }
