@@ -141,7 +141,6 @@ nav{
 .cards {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
-    /* IMPORTANT: no grid-template-rows here so behavior matches original */
     width: 100%;
 }
 
@@ -785,13 +784,11 @@ h1 { font-size: 2rem; }
 h2 { font-size: 1.6rem; }
 p  { font-size: 1rem; }
 
-
 @media (min-width: 768px) {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
     p  { font-size: 1.15rem; }
 }
-
 
 @media (min-width: 1200px) {
     h1 { font-size: 3rem; }
